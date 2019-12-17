@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@android:color/transparent"
+        android:ems="25"
+        android:text="@string/_0_0_0_0"
+        android:textAlignment="viewStart"
+        android:textColor="#427a00"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_imei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@android:color/transparent"
+        android:ems="20"
+        android:text="@string/imei"
+        android:textAlignment="viewStart"
+        android:textColor="#427a00"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_location" />
+
+    <TextView
+        android:id="@+id/txt_timeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@android:color/transparent"
+        android:ems="20"
+        android:text="@string/timeline"
+        android:textColor="#427a00"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_imei" />
+
+    <TextView
+        android:id="@+id/txt_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@android:color/transparent"
+        android:ems="20"
+        android:text="@string/_16999915192"
+        android:textAlignment="viewStart"
+        android:textColor="#427a00"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_timeline" />
+
+    <ImageView
+        android:id="@+id/iv_wifi"
+        android:layout_width="100dp"
+        android:layout_height="134dp"
+        android:layout_marginBottom="238dp"
+        android:contentDescription="@string/todo"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_connection_status"
+        app:layout_constraintStart_toStartOf="@+id/txt_connection_status"
+        app:srcCompat="@drawable/wifi_symbol_wait" />
+
+    <TextView
+        android:id="@+id/txt_connection_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/connection_status"
+        android:textColor="#427a00"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_wifi"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_please_wait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="@string/please_wait"
+        android:textColor="#427a00"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_connection_status"
+        app:layout_constraintStart_toStartOf="@+id/txt_connection_status"
+        app:layout_constraintTop_toBottomOf="@+id/txt_connection_status"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Radar PET Tracker</string>
+    <string name="_0_0_0_0">0.0 / 0.0</string>
+    <string name="imei">IMEI</string>
+    <string name="timeline">Timeline</string>
+    <string name="insert_in_database">Insert In Database</string>
+    <string name="_16999915192">16999915192</string>
+    <string name="todo">TODO</string>
+    <string name="connection_status">Connection status:</string>
+    <string name="please_wait">Please wait...</string>
+</resources>
